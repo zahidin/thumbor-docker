@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+    thumborContainer:
+        image: minimalcompact/thumbor:7.0.0
+        container_name: thumbor
+        env_file:
+            - .env
+        ports:
+            - '8888:80'
+        volumes:
+            - thumbor-data:/data/asset
+volumes: 
+    thumbor-data:
