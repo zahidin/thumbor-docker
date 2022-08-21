@@ -1,7 +1,8 @@
 version: '3.3'
 services:
     thumborContainer:
-        image: minimalcompact/thumbor:7.0.0
+        # image: minimalcompact/thumbor:7.0.0
+        image: apsl/thumbor
         container_name: thumbor
         env_file:
             - .env
