@@ -3,6 +3,7 @@ services:
     thumborContainer:
         # image: minimalcompact/thumbor:7.0.0
         image: apsl/thumbor
+        restart: unless-stopped
         container_name: thumbor
         env_file:
             - .env
